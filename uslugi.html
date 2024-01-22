@@ -37,8 +37,31 @@
             display: flex;
             justify-content: space-around;
         }
+
+        .content2 {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            
+            justify-content: space-around;
+        }
         .package {
             width: 48%; /* Adjust the width as necessary, making sure the two together don't exceed 100% */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .package1 {
+            width: 70%; /* Adjust the width as necessary, making sure the two together don't exceed 100% */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .package2 {
+            width: 25%; /* Adjust the width as necessary, making sure the two together don't exceed 100% */
             padding: 10px;
             box-sizing: border-box;
         }
@@ -51,6 +74,73 @@
             bottom: 0;
             width: 100%;
         }
+
+
+        .category-title {
+            font-size: 1.2em;
+            color: #007bff;
+            padding: 0.5em;
+            cursor: pointer;
+        }
+
+        .category {
+            background-color: white;
+
+        }
+
+
+        .test-details {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 1em;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .test-title {
+            color: #333;
+        }
+
+        .test-price {
+            font-weight: bold;
+        }
+
+        .test-description {
+            margin: 0.5em 0;
+        }
+
+        .test-resources {
+            margin-bottom: 1em;
+        }
+
+        .database-link {
+            display: inline-block;
+            margin-right: 1em;
+        }
+
+        .video-thumbnail {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .video-image {
+            width: 100px;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .order-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+            .order-button:hover {
+                background-color: #218838;
+            }
+
+
     </style>
 </head>
 <body>
@@ -64,20 +154,114 @@
 
     <div class="content">
         <div class="package">
-            <h2>Pakiet Podstawowy</h2>
-            <p>Krótki opis pakietu podstawowego.</p>
+            <h2>Pakiet Podstawowych Badań</h2>
+            <p>Sprawdź swoje ryzyko zachorowań na najpopularniejsze choroby genetycze</p>
             <button>Zamów Pakiet</button>
         </div>
         <div class="package">
-            <h2>Pakiet Rozszerzony</h2>
-            <p>Krótki opis pakietu rozszerzonego.</p>
+            <h2>Pakiet Badań Preimplantacyjnych </h2>
+            <p>Sprawdżcie, na jakie potencjane chroby przyszłego dziecka powinniście się przygotować</p>
             <button>Zamów Pakiet</button>
         </div>
+
+
     </div>
-    <!-- Tutaj umieścisz pojedyncze badania z opcją wyboru, ceną, linkiem i miniaturą filmu -->
+
+    <div class="content2">
+        <div class="category">
+            <details>
+                <summary class="category-title"> Najpopularniejsze choroby genetyczne</summary>
+                <div class="content">
+                    <div class="package1">
+                        <div class="test-details">
+                            <div class="test">
+                                <div class="test-header">
+                                    <h3 class="test-title">Choroba Huntingtona</h3>
+                                    <span class="test-price">Cena: 299 zł</span>
+                                </div>
+                                <p class="test-description">Opis badania A, które pomaga w zrozumieniu ryzyka wystąpienia choroby X.</p>
+                                <div class="test-resources">
+                                    <a href="link-do-bazy-danych" target="_blank" class="database-link">Baza Danych: Locus A</a>
+                                </div>
+                                <button class="order-button">Zamów Badanie</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="package2">
+                        <img src="fenyloketonuria.jpg" width="200px" style="float: right" />
+                    </div>
+                </div>
+
+            </details>
+        </div>
+
+        <div class="category">
+            <details>
+                <summary class="category-title"> Choroby rzadkie</summary>
+                <div class="content">
+                    <div class="package1">
+                        <div class="test-details">
+                            <div class="test">
+                                <div class="test-header">
+                                    <h3 class="test-title">Badanie A</h3>
+                                    <span class="test-price">Cena: 299 zł</span>
+                                </div>
+                                <p class="test-description">Opis badania A, które pomaga w zrozumieniu ryzyka wystąpienia choroby X.</p>
+                                <div class="test-resources">
+                                    <a href="link-do-bazy-danych" target="_blank" class="database-link">Baza Danych: Locus A</a>
+                                </div>
+                                <button class="order-button">Zamów Badanie</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="package2">
+                        <img src="fenyloketonuria.jpg" width="200px" style="float: right" />
+                    </div>
+                </div>
+
+            </details>
+        </div>
+
+        <div class="category">
+            <details>
+                <summary class="category-title"> Cechy niezwiązane z chorobami</summary>
+                <div class="content">
+                    <div class="package1">
+                        <div class="test-details">
+                            <div class="test">
+                                <div class="test-header">
+                                    <h3 class="test-title">Badanie A</h3>
+                                    <span class="test-price">Cena: 299 zł</span>
+                                </div>
+                                <p class="test-description">Opis badania A, które pomaga w zrozumieniu ryzyka wystąpienia choroby X.</p>
+                                <div class="test-resources">
+                                    <a href="link-do-bazy-danych" target="_blank" class="database-link">Baza Danych: Locus A</a>
+                                </div>
+                                <button class="order-button">Zamów Badanie</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="package2">
+                        <img src="fenyloketonuria.jpg" width="200px" style="float: right" />
+                    </div>
+                </div>
+
+            </details>
+        </div>
+    </div>
+
 
     <footer>
-        <p>&copy; 2024 Twoja Firma Genetyczna</p>
+        <p>&copy; 2024 GenoPol</p>
     </footer>
 
 </body>

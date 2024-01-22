@@ -1,21 +1,58 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Misja i Wizja - Twoja Firma Genetyczna</title>
-    <style>
-        /* Styl taki jak w index.html */
-    </style>
+    <title>Misja i Wizja - GenoPol</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
     <nav>
-        <!-- Menu takie jak na głównej stronie -->
+        <a href="index.html">Strona Główna</a>
+        <a href="misja.html">Misja i Wizja</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
     </nav>
-
     <div class="content">
-        <h1>Misja i Wizja</h1>
-        <p>Tutaj opisz misję i wizję Twojej firmy.</p>
+        <p class="headline">Misja i Wizja</p>
     </div>
 
+    <div class="row">
+        <div class="column-1">
+            <div class="misja" onclick="Wyswietl1()">Misja i wizja</div>
+        
+            <div id="content-2">
+                <p>
+                    <b>Misja:</b> Dostępne, edukacyjne i spersonalizowane podejście do genetyki, umożliwiające naszym
+                    użytkownikom zrozumienie swojego dziedzictwa genetycznego i podejmowanie świadomych
+                    decyzji dotyczących zdrowia, rodziny i stylu życia.
+                </p>
+                <p>
+                    <b>Wizja:</b> Dostęp do poradnictwa genetycznego na wyciągnięcie ręki.
+                </p>
+            </div>
+        </div>
+        <div class="column-1">
+            <div class="zarys" onclick="Wyswietl2()">Krótki zarys strategii i działania</div>
+
+            <div id="content-3">
+                <p>
+                    GenoPol skupi się na dostarczaniu usług genetycznych poprzez
+                    aplikację i&nbsp;stronę internetową, oferując klientom wybór pakietów badań
+                    genetycznych. Strategia obejmie marketing cyfrowy i inicjatywy, zwiększając
+                    świadomość na temat znaczenia genetyki w zdrowiu. Po złożeniu zamówienia klient otrzyma
+                    wymazówkę, a wyniki badań zostaną przedstawione podczas konsultacji online z
+                    genetykiem, a następnie przesłane drogą mailową. Firma planuje współpracę z branżą
+                    medyczną i farmaceutyczną, rozwijając się o badania genów wpływających na metabolizm
+                    leków, oraz dążyć do integracji z&nbsp;systemami opieki zdrowotnej. Działania będą wspierane przez
+                    analizę rynku, feedback od klientów oraz inne źródła finansowania.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 GenoPol</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

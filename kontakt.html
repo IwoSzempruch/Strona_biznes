@@ -1,21 +1,65 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Kontakt - Twoja Firma Genetyczna</title>
-    <style>
-        /* Styl taki jak w index.html */
-    </style>
+    <title>Kontakt - Genopol</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
     <nav>
-        <!-- Menu takie jak na głównej stronie -->
+        <a href="index.html">Strona Główna</a>
+        <a href="misja.html">Misja i Wizja</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
     </nav>
 
     <div class="content">
-        <h1>Kontakt</h1>
-        <p>Tutaj umieść dane kontaktowe, formularz kontaktowy lub inne informacje.</p>
+        <p class="headline">Kontakt</p>
     </div>
+
+    <div class="row">
+        <div class="column-2">
+            <div class="content" id="index">
+                <p><b>Informacje kontaktowe</b></p>
+                <ul>
+                    <li><b>Adres:</b> ul. Kreatywna 123, 00-000 Miasto</li>
+                    <li><b>Telefon:</b> +48 123 456 789</li>
+                    <li><b>E-mail:</b> info@designstudio.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column-2">
+            <div class="content" id="index">
+                    <p><b>Masz pytania lub sugestie? Napisz do nas&nbsp;poniżej.</b></p>
+                    <div id="column-1" style="float:left;margin-left: 70px; padding: 5px;">
+                        <label for="name">Imię i Nazwisko:</label><br>
+                        <label for="email">Adres E-mail:</label><br>
+                        <label for="message">Wiadomość:</label>
+                    </div>
+                    <div id="column-1" style="float:right;margin-right:70px;">
+                        <input type="text" id="name" name="name" required><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="misja">Wyślij</div>
+            </div>
+        </div>
+
+        <div class="column-2">
+            <div class="content" id="index">
+                <p><b>Inne Media:</b></p>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Insta</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GenoPol</p>
+    </footer>
 
 </body>
 </html>
