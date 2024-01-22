@@ -3,90 +3,78 @@
 <head>
     <title>Usługi - Twoja Firma Genetyczna</title>
     <style>
-        /* Style pozostają takie same jak w pierwotnym kodzie */
-        /* ... */
-
-        /* Dodatkowe style dla pakietów badań i pojedynczych badań */
-        .packages,
-        .single-tests {
-            margin-bottom: 20px;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: url('uslugi_tlo.png') no-repeat center center fixed;
+            background-size: cover;
         }
-
-        .package,
-        .test {
-            background: #f7f7f7;
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+        }
+            nav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+                nav a:hover {
+                    background-color: #555;
+                }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .package {
+            width: 48%; /* Adjust the width as necessary, making sure the two together don't exceed 100% */
             padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
+            box-sizing: border-box;
         }
-
-        .package a,
-        .test a {
-            color: #337ab7;
-            text-decoration: none;
-        }
-
-        .package:hover,
-        .test:hover {
-            background-color: #e7e7e7;
-        }
-
-        .test .price {
-            color: #5cb85c;
-        }
-
-        .test .database-link,
-        .test .video-miniature {
-            display: block;
-        }
-
-        .test .video-miniature img {
-            max-width: 100px;
-            border-radius: 5px;
-        }
-
         footer {
-            position: relative;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <!-- Nawigacja pozostaje bez zmian -->
-        <!-- ... -->
+        <a href="index.html">Strona Główna</a>
+        <a href="misja.html">Misja i Wizja</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
     </nav>
 
     <div class="content">
-        <h1>Nasze Usługi</h1>
-
-        <div class="packages">
-            <!-- Sekcja pakietów badań -->
-            <div class="package">
-                <h2>Pakiet Podstawowy</h2>
-                <p>Krótki opis pakietu podstawowego.</p>
-                <a href="zakup_pakietu_podstawowego.html">Zamów Pakiet</a>
-            </div>
-            <div class="package">
-                <h2>Pakiet Rozszerzony</h2>
-                <p>Krótki opis pakietu rozszerzonego.</p>
-                <a href="zakup_pakietu_rozszerzonego.html">Zamów Pakiet</a>
-            </div>
+        <div class="package">
+            <h2>Pakiet Podstawowy</h2>
+            <p>Krótki opis pakietu podstawowego.</p>
+            <button>Zamów Pakiet</button>
         </div>
-
-        <div class="single-tests">
-            <!-- Sekcja pojedynczych badań -->
-            <div class="test">
-                <h3>Badanie A</h3>
-                <span class="price">Cena: 299 zł</span>
-                <a href="https://baza-danych-genów.com/locusA" class="database-link">Baza Danych: Locus A</a>
-                <div class="video-miniature">
-                    <a href="film_edukacyjny_A.html"><img src="miniatura_A.jpg" alt="Film o genie A"></a>
-                </div>
-            </div>
-            <!-- Powtórz dla każdego badania -->
+        <div class="package">
+            <h2>Pakiet Rozszerzony</h2>
+            <p>Krótki opis pakietu rozszerzonego.</p>
+            <button>Zamów Pakiet</button>
         </div>
     </div>
+    <!-- Tutaj umieścisz pojedyncze badania z opcją wyboru, ceną, linkiem i miniaturą filmu -->
 
     <footer>
         <p>&copy; 2024 Twoja Firma Genetyczna</p>
